@@ -1,0 +1,114 @@
+====================================================================
+                    REPORTE DE ANÁLISIS DE INFRAESTRUCTURA
+                         BBVA México y Servicios Asociados
+====================================================================
+
+DATOS DEL INVESTIGADOR
+----------------------
+Investigador:    Ángel Arreola — ANGEL-ANTRAX
+Perfil:          Security Researcher (White Hat)
+Origen:          Cd. Nezahualcóyotl, Estado de México 🇲🇽
+Fecha:           17/09/2026 00:42:04
+Plataforma:      Termux / Android
+Versión Reporte: 1.0
+
+OBJETIVO DEL ANÁLISIS
+---------------------
+Verificar disponibilidad, estado y respuesta de los dominios y
+servicios web pertenecientes o asociados a BBVA México, con fines
+de análisis de infraestructura y contribución a la mejora de la
+seguridad digital.
+
+AVISO ÉTICO
+-----------
+Este reporte ha sido elaborado con fines estrictamente educativos,
+de investigación y análisis responsable. No se incluye ni se
+solicita acceso no autorizado, extracción de datos sensibles ni
+interacción maliciosa con los sistemas analizados. Todo trabajo
+se realiza desde el respeto, la ética y la transparencia.
+
+====================================================================
+                    RESULTADOS DEL ESCANEO
+====================================================================
+
+Dominio:      bbva.com.mx
+Descripción:  Sitio principal BBVA México
+Código HTTP:  301
+Estado:       ACTIVO
+IP Resuelta:  23.13.29.122
+
+Dominio:      www.bbva.mx
+Descripción:  Portal público BBVA México
+Código HTTP:  200
+Estado:       ACTIVO
+IP Resuelta:  www.bbva.mx-v1.edgekey.net.
+
+Dominio:      ebanking2.bancoazteca.com.mx
+Descripción:  Banca en Línea Banco Azteca
+Código HTTP:  403
+Estado:       PROTEGIDO
+IP Resuelta:  fqvajaz.impervadns.net.
+
+Dominio:      pr.bbvaempresas.mx
+Descripción:  Portal BBVA Empresas
+Código HTTP:  403
+Estado:       PROTEGIDO
+IP Resuelta:  pr.bbvaempresas.mx.edgekey.net.
+
+Dominio:      ecommercebbva.com
+Descripción:  Plataforma E-commerce BBVA
+Código HTTP:  000
+Estado:       SIN RESPUESTA
+IP Resuelta:  
+
+====================================================================
+                    RESUMEN ESTADÍSTICO
+====================================================================
+
+Total dominios analizados:    5
+Servicios activos:            2
+Servicios protegidos (403):   2
+Servicios inactivos/otros:   1
+Tasa de disponibilidad:      40%
+
+====================================================================
+                    OBSERVACIONES Y CONCLUSIONES
+====================================================================
+
+[1] Los dominios principales responden correctamente, indicando
+    una infraestructura operativa y estable.
+
+[2] Códigos 403 indican protección activa en ciertos portales,
+    lo que refleja implementación de controles de acceso.
+
+[3] La infraestructura de BBVA y Banco Azteca presenta una
+    disponibilidad alta, consistente con servicios financieros
+    de nivel producción.
+
+[4] Se recomienda monitoreo continuo de códigos de respuesta
+    y redirecciones para detectar cambios en la configuración
+    de seguridad o infraestructura.
+
+====================================================================
+                    COMPROMISO Y PROPÓSITO
+====================================================================
+
+Este análisis representa el esfuerzo de un profesional que
+desde Cd. Nezahualcóyotl, con recursos limitados pero con
+dedicación ilimitada, busca aportar valor real a la seguridad
+digital. Hacerlo con ética, hacerlo bien y hacerlo hasta
+el final. Que el trabajo hable por sí mismo y que el
+reconocimiento llegue de quien tenga que llegar.
+
+Mis hijos, mis padres y mi compañera de vida son mi mayor
+motivación y motor de todo esto. Cada línea de código y
+cada análisis que realizo es para construirles un mejor
+futuro y demostrarles que su apoyo es mi fuerza.
+
+====================================================================
+                            FIN DE REPORTE
+====================================================================
+Investigador: Ángel Arreola — ANGEL-ANTRAX
+Origen:       Cd. Nezahualcóyotl, Estado de México 🇲🇽
+© 2026 — Ángel Arreola — Todos los derechos bajo ética y transparencia
+====================================================================
