@@ -7,7 +7,7 @@
 
 ## 🔐 Sobre mí
 
-**Soy hacker.** No para destruir, sino para proteger.
+Soy hacker No para destruir, sino para proteger.
 
 Analizo sistemas, encuentro lo que está expuesto, lo documento y lo entrego — desde un celular, con recursos propios y sin rendirme.
 
