@@ -1,4 +1,4 @@
-# 👋 SOY HACKER — Ángel Arreola | ANGEL-ANTRAX
+# 👋 SOY Y SERE HACKER — Ángel Arreola | ANGEL-ANTRAX
 
 > **Investigador de Ciberseguridad Independiente** 🇲🇽
 > Cd. Nezahualcóyotl, Estado de México
