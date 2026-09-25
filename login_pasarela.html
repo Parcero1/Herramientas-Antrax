@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<title>Bienvenidos a Pasarela de Pagos BBVA</title>		
+		<!-- Se comenta porque la carpeta 'css' no existe
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		-->
+		<style type="text/css">
+			body{background:#fff; font:62.5%;}
+			.caja {margin:auto; width:780px; height:435px; background:url(mult/PPGcaja_blanca.gif) no-repeat;}
+			.pasarela {text-align:right; font-family:Helvetica; color:#333399; font-size:1.4em;}
+			.txtsele_iz {text-align:left; font-family:Arial; color:#333399; font-size:0.8em;}
+			.txtsele_ce {text-align:center; font-family:Arial; color:#333399; font-size:0.8em;}
+			.derechos {text-align:right; font-family:Arial; color:#333399; font-size:0.6em;}
+		</style>
+
+		<script language="JavaScript" src="mult/cambioWebSeal.js"></script>
+		<script language="JavaScript">
+			<!--
+			if (document.images)
+			{
+			button_2on = new Image();
+			button_2on.src = "mult/PPGsalir-on.gif";
+			button_2off = new Image();
+			button_2off.src = "mult/PPGsalir-off.gif";
+			}
+
+			function button_on(myname)
+			{
+					if (document.images)
+					{
+							imgOn = eval(myname + "on.src");
+							document[myname].src = imgOn;
+					}
+			}
+			function button_off(myname)
+			{
+					if (document.images)
+					{
+							imgOff = eval(myname + "off.src");
+							document[myname].src = imgOff;
+					}
+			}
+			// -->
+
+			function leerCookie()
+			{
+				var buscamos = "urlpasarela=";
+				i = document.cookie.indexOf(buscamos);
+
+				if (document.cookie.length > 0)
+				{
+					i = document.cookie.indexOf(buscamos);
+					if (i != -1)
+					{
+						i += buscamos.length;
+						j = document.cookie.indexOf(";", i);
+						if (j == -1)
+						{
+							j = document.cookie.length;
+						}
+						return document.cookie.substring(i, j);
+					}
+				} else {
+					return "";
+				}
+			}
+
+			function getURLParameter(parametro)
+			{
+				var Url = leerCookie();
+				var aux = "";
+				Variables = Url.split ("&");
+				for (i = 0; i < Variables.length; i++) {
+					   Separ = Variables[i].split("=");
+					   if(parametro == Separ[0]){
+							aux = Separ[1];
+							break;
+					   }		   
+				}
+				return aux;
+			}
+
+			function isEstandar()
+			{
+				var Url = leerCookie();
+				if(Url.indexOf("proceso=tlpa_pago_transfer_pr") != -1)
+					return true;
+				else
+					return false;	
+			}
+
+			function isVisible()
+			{
+				if(isEstandar()){
+					urlSalida = getURLParameter('UrlSalida');	
+					if(!urlSalida) {
+						document.getElementById("bSalir").style.visibility="hidden";
+					}
+				}	
+			}
+
+			function fSalir()
+			{
+				var framePE = (getURLParameter("framePE") === 'true');	
+				if(isEstandar()) {
+					//Cambio ANS
+					urlSalida = DOMPurify.sanitize(decodeURIComponent(getURLParameter("UrlSalida"))); //Decodificamos la URI
+					if(framePE)
+						window.location.href = urlSalida;
+					else
+						top.location.href = urlSalida;
+				} else {
+					window.top.history.go(-2);
+				}	
+			}
+
+			function redirigir(f,nombre)
+			{
+				var urlOrigen = leerCookie();
+				
+				if (urlOrigen == undefined || urlOrigen.length == 0)
+				{
+					alert("Debe activar las Cookies en su navegador.");
+				}
+				else
+				{
+					dominioAux = urlOrigen.substring (urlOrigen.indexOf('\/\/')+2);
+
+					dominioOri = dominioAux.substring (0,dominioAux.indexOf('\/'));
+
+					cambioWebSeal(dominioOri);
+
+					if (nombre != 'cash')
+					{
+						urlAux = urlOrigen.substring (0,urlOrigen.indexOf('\/\/')+2);
+						if (nombre == 'net') 
+						{
+							urlAux+= WebS_net;
+							//urlAux+= dominioAux.substring (dominioAux.indexOf('\/'), dominioAux.indexOf('LogonOperacionServlet'))
+							urlAux+= dominioAux.substring (dominioAux.indexOf('\/'));
+							//urlAux+= "DFactor";
+							//urlAux+= dominioAux.substring (dominioAux.indexOf('?'));		
+						}
+						
+						if (nombre == 'office')
+						{
+							urlAux+= WebS_office;
+							urlAux+= dominioAux.substring (dominioAux.indexOf('\/'));
+						}
+						
+						//urlAux+= dominioAux.substring (dominioAux.indexOf('\/'));							
+					}
+					else
+					{
+						if (nombre == 'cash')
+						{
+							dominioDes = WebS_cash;
+						}
+						else
+						{
+							dominioDes = ip;			
+						}
+						
+						urlAux = urlOrigen.substring (0,urlOrigen.indexOf('\/\/')+2);
+						urlAux+= dominioDes;
+						urlAux+= dominioAux.substring (dominioAux.indexOf('\/'));			
+					}
+				}
+				f.action = urlAux;
+				f.submit();
+			}
+			
+		</script>
+	</head>
+
+	<body onload="isVisible()" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" border="0">
+		<div class="caja">
+			<form name="login" method="post">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="780" height="435">
+					<tr> 
+						<td height="30pt" colspan="4"></td>
+					</tr>
+					<tr> 
+						<td width="30pt"></td>
+						<td valign="top"><img src="mult/PPGlogo_bbva.gif" border="0"></td>
+						<td class="pasarela">Pasarela de pagos</td>
+						<td width="30pt"></td>
+					</tr>
+					
+					<tr>
+						<td width="30pt"></td>
+						<td colspan="2">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+								<tr> 
+									<td colspan="3" class="txtsele_iz"></td>
+								</tr>
+								<tr> 
+									<td colspan="3" class="txtsele_iz">Seleccione el m&eacute;todo de identificaci&oacute;n en BBVA:</td>
+								</tr>
+								<tr valign="top">
+									<!-- Estos enlaces no sirven en LOCAL -->
+									<td align="center"><a href="javascript:redirigir(document.login,'net');"><img src="mult/PPGbbva_particulares.gif" border="0" alt="BBVA.es Particulares"></td>
+									<td align="center"><a href="javascript:redirigir(document.login,'cash');"><img src="mult/PPGnetcash.gif" border="0" alt="BBVA net cash"></td>						
+									<!-- 
+									<td align="left"><a href="login_pasarela_net.html;"><img src="mult/PPGbbva_particulares.gif" border="0" alt="BBVA.es Particulares"></td>
+									<td align="center"><a href="login_pasarela_cash.html;"><img src="mult/PPGnetcash.gif" border="0" alt="BBVA net cash"></td>
+									<td align="right"><a href="login_pasarela_office.html;"><img src="mult/PPGnetoffice.gif" border="0" alt="BBVA net office"></td>
+									-->
+								</tr>
+								<tr> 
+									<td colspan="3" class="txtsele_iz"></td>
+								</tr>
+							</table>
+						</td>
+						<td width="30pt"></td>
+					</tr>
+
+					<tr valign="bottom">
+						<td width="30pt"></td>
+						<td>
+							<div id="bSalir" style="visibility: visible">
+								<a href="javascript:fSalir()" onMouseOver="button_on('button_2')" onMouseOut="button_off('button_2')">
+									<img src="mult/PPGsalir-off.gif" name="button_2" border="0" alt="Salir">
+								</a>
+							</td>
+						<td class="derechos">&copy; Todos los derechos reservados</td>
+						<td width="30pt"></td>
+					</tr>
+					<tr> 
+						<td height="30pt" colspan="4">&nbsp;</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	<script type="text/javascript"  src="/N5Kqb9Kw7Wi39/RSSQ8Z4uAqQk/vI/5J9bN8E1DY7uhQiEL1/AXwXOCo/Nglp/QltECQIB"></script></body>
+</html>

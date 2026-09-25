@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<title>Inicio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="es" />
+<script type="text/javascript" src="js/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/kyop_common.js"></script>
+<script type="text/javascript">
+
+	function inicio(){
+		if ( getCookie("CODIGO_PRODUCTO") !== "405" ) {
+			deleteAllCookies();
+		}
+		setCookiesIfNotExists({"COD_IDIOMISO": getCorrectDefault("ES", "COD_IDIOMISO", "es"),
+					"INICIO": "ES",
+					"PAIS": getCorrectDefault("ES", "PAIS", "ES")});
+		setCookie("CODIGO_ERROR", "");
+		setCookie("CODIGO_PRODUCTO", "405");
+		redirect();
+	}
+</script>
+</head>
+<body onload="inicio();">
+
+
+<script type="text/javascript"  src="/xBLG_q9Xa/TWvAFYEG/w/OS1OGS1LQa3pGVD7/BzYlJg/Azx/9Kl0dbCk"></script></body>
+</html>

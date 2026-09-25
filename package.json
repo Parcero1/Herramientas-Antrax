@@ -1,0 +1,24 @@
+{
+  "name": "herramientas-antrax",
+  "version": "1.0.0",
+  "description": "**Autor:** Ángel Arreola — ANGEL-ANTRAX **Origen:** Cd. Nezahualcóyotl, Estado de México 🇲🇽 **Fecha:** Septiembre 2026",
+  "main": "Rg8.1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parcero1/Herramientas-Antrax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Parcero1/Herramientas-Antrax/issues"
+  },
+  "homepage": "https://github.com/Parcero1/Herramientas-Antrax#readme",
+  "dependencies": {
+    "playwright": "^1.63.0"
+  }
+}

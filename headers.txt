@@ -1,0 +1,9 @@
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 9
+Date: Wed, 23 Sep 2026 01:47:00 GMT
+Connection: keep-alive
+Set-Cookie: akavpau_CAU_PR_NETCASH_MX_ACCESO=1790128320~id=4fe28d3d2c068e5a4e1d33dab38352c0; Path=/; HttpOnly; Secure; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: ak_bmsc=DF7F6DD364FD3B591AE6A0B78C32D92F~000000000000000000000000000000~YAAQaG/AFxbtCpegAQAAMdrxywE4XvZohJ2eJmq63rkDRNMQqMQJkMohcON+08v+X4OXu51G9VT+L+7IMNiS25+qfHeKLDB7tgErTQkNWhaMFlHWTupE6fNL3vWUyMQZR5s88/uyNuTTC0NbJui35Ghrso1Cd+GYxmbguC/GcjzVrJSVsytB+ntogYxPLRoM0lVG6/UWqzMRYuyKdBkbGh7STh03NsN8C4+NvD59CL3M0+xMT+LfzB//SqP1KDaXpBlR6wZWhMrs8y94CJavXAkEuLGAovyMa6VPBMrhfIbZnNBX57cT7rEIwP2ILQDxj0rEWrc+rPuY/9uQ+9s0szbxJ5Rycu1yzl7SDSpqLVj+bMPc1KhjAx1VbCHFDV9aNFiOEvrJvsEfrAqMTBHmxw==; Domain=.bbvanetcash.mx; Path=/; Expires=Wed, 23 Sep 2026 03:46:59 GMT; Max-Age=7199; SameSite=None; Secure; HttpOnly
+
