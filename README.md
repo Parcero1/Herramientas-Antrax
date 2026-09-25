@@ -33,6 +33,7 @@ Analizo sistemas, encuentro lo que está expuesto, lo documento y lo entrego —
 ## 📂 MIS REPORTES Y TRABAJO CON BBVA — EN DETALLE
 
 ### 🏦 Reporte 1 — Exposición de Arquitectura Interna
+a
 **Plataforma:** BBVA Net Cash — `bbvanetcash.com`
 
 🔍 **Lo que descubrí:**
