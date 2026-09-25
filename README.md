@@ -1,63 +1,75 @@
-## 👋 Ángel Arreola — ANGEL-ANTRAX
+# 👋 ¡Hola! Soy Ángel Arreola — ANGEL-ANTRAX
 
-> 🇲🇽 **Hacker Ético e Investigador de Ciberseguridad** | Cd. Nezahualcóyotl, México  
-> 💡 *"Un verdadero hacker no destruye — protege, revela y defiende"*
+> **Investigador de Ciberseguridad Independiente** 🇲🇽
+> Cd. Nezahualcóyotl, Estado de México
 
 ---
 
-## 🏆 Reporte Responsable — Infraestructura BBVA · Septiembre 2026
+## 🔐 Sobre mí
 
-Como **hacker ético**, realicé análisis de exposición en la infraestructura pública de **BBVA México**. Todos los hallazgos fueron entregados por el canal oficial de Divulgación Responsable (VDP), bajo estricto cumplimiento legal y ético.
+Apasionado por la seguridad digital. Analizo sistemas, protejo información y comparto lo que aprendo — desde un celular, con recursos propios y mucha determinación.
 
-### Puntuaciones CVSS asignadas:
-| Gravedad | Puntuación |
+> *"Mis hijos son mi mayor motivación. Demostrando que desde cualquier lugar se puede crecer en ciberseguridad."*
+
+---
+
+## 🧠 Áreas de trabajo
+
+- 🔍 Análisis de flujos de autenticación y protección de acceso
+- 🧩 Desofuscación e ingeniería inversa de código JavaScript
+- 🛡️ Identificación de capas de seguridad: WAF, Bot Management, sistemas federados
+- 📝 Divulgación responsable y reportes técnicos completos
+- 💻 Trabajo real desde entorno móvil/Termux
+
+---
+
+## 📂 Proyectos destacados
+
+### 🏦 Análisis de Seguridad — BBVA Net Cash
+> Estudio completo del flujo de acceso y autenticación de la plataforma BBVA Net Cash
+
+- ✅ Identificación de 4 capas de protección (Akamai → IBM Security → lógica de redirección → ofuscación)
+- ✅ Confirmación de detección de automatización y comportamiento de bloqueo
+- ✅ Desglose línea por línea de `login.jsp` y validación de origen
+- ✅ Exposición de arquitectura: `productoV3.js` revelaba rutas, plataformas y sistemas internos sin restricción
+- 📂 Repositorio: [Herramientas-Antrax](https://github.com/Parcero1/Herramientas-Antrax)
+
+---
+
+## 🛡️ Impacto del trabajo realizado
+
+🔍 **Hallazgo detectado:**
+- Archivo `productoV3.js` accesible sin autenticación — exponía rutas, plataformas y arquitectura interna
+- Información sensible visible por cualquier visitante, sin cuenta ni contraseña
+- Mapeo completo de entornos México, España y sistemas compartidos al descubierto
+
+✅ **Resultado:**
+- 📄 Hallazgo documentado con evidencia técnica
+- 📤 Reporte enviado por canal oficial de divulgación responsable
+- 🔐 La institución informada para corregir la exposición
+- 👥 Contribución directa a la protección de usuarios y clientes
+
+> *"Señalé lo que estaba abierto. Ahora se puede cerrar."*
+
+---
+
+## 🛠️ Herramientas y entorno
+
+| Categoría | Tecnologías |
 |---|---|
-| 🔴 Crítica | **9.3** |
-| 🟠 Alta | **8.6** |
-| 🟠 Alta | **8.3** |
-
-### Alcance del trabajo:
-- ✅ Detección de recursos internos y plataformas expuestas públicamente
-- ✅ Identificación de mecanismos de acceso que no deberían ser visibles
-- ✅ Documentación técnica completa con evidencia
-- ✅ Reporte enviado — **sin acceso indebido, sin alteración, sin difusión**
-- ⏳ **En revisión por el equipo de seguridad de BBVA**
-
-### Impacto logrado:
-- ⛔ Bloqueado acceso malicioso por terceros
-- ⛔ Evitada filtración de información sensible
-- ✅ Fortalecida la seguridad de la institución y sus usuarios
-
----
-
-## 🛡️ Áreas de acción
-- Hacking Ético · Divulgación Responsable
-- Análisis de infraestructura y seguridad web
-- Protección de plataformas financieras
-
----
-
-## 📌 Sobre este proyecto
-Colección de scripts y herramientas de análisis, escaneo y verificación de servicios web, desarrolladas desde Termux en Android. Construidas con curiosidad, esfuerzo y ética profesional.
-
-## ⚠️ Aviso Ético
-Todo el contenido aquí presente es **para fines educativos, de investigación y aprendizaje legítimo**. El uso indebido, malintencionado o sin autorización queda prohibido y es responsabilidad exclusiva de quien lo utilice.
-
-## 📁 Contenido
-| Archivo | Descripción |
-|---|---|
-| `escaneo_dominios.sh` | Verifica códigos HTTP y disponibilidad de dominios |
-
-## 🎯 Mi motivación
-> *"Mis hijos son mi mayor motivación. Quiero demostrar que desde cualquier lugar, con recursos propios y mucho esfuerzo, se puede aprender, construir y crecer en el mundo de la tecnología y la ciberseguridad."* — Ángel Arreola
+| Entorno | Termux / Android / ARM64 |
+| Análisis | `grep`, `curl`, solicitudes HTTP directas |
+| Código | JavaScript, Node.js, estructuras de ofuscación |
+| Estándares | SHA-256, cabeceras de seguridad, cookies firmadas |
+| Prácticas | Divulgación responsable, ética profesional |
 
 ---
 
 ## 📫 Contacto
-- **Nombre:** Ángel Arreola
-- **Seudónimo:** ANGEL-ANTRAX
-- **Ubicación:** Cd. Nezahualcóyotl, México
+
+- 🔗 Perfil: [github.com/Parcero1](https://github.com/Parcero1)
+- 📍 Cd. Nezahualcóyotl, Estado de México 🇲🇽
 
 ---
 
-*"La ciberseguridad no se trata de romper, se trata de entender para proteger."*
+> *"El que entiende, protege. El que comparte, fortalece."* 🔥
