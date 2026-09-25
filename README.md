@@ -1,7 +1,39 @@
-# 🛡️ Herramientas de Análisis y Escaneo Web
-**Autor:** Ángel Arreola — ANGEL-ANTRAX
-**Origen:** Cd. Nezahualcóyotl, Estado de México 🇲🇽
-**Fecha:** Septiembre 2026
+## 👋 Ángel Arreola — ANGEL-ANTRAX
+
+> 🇲🇽 **Hacker Ético e Investigador de Ciberseguridad** | Cd. Nezahualcóyotl, México  
+> 💡 *"Un verdadero hacker no destruye — protege, revela y defiende"*
+
+---
+
+## 🏆 Reporte Responsable — Infraestructura BBVA · Septiembre 2026
+
+Como **hacker ético**, realicé análisis de exposición en la infraestructura pública de **BBVA México**. Todos los hallazgos fueron entregados por el canal oficial de Divulgación Responsable (VDP), bajo estricto cumplimiento legal y ético.
+
+### Puntuaciones CVSS asignadas:
+| Gravedad | Puntuación |
+|---|---|
+| 🔴 Crítica | **9.3** |
+| 🟠 Alta | **8.6** |
+| 🟠 Alta | **8.3** |
+
+### Alcance del trabajo:
+- ✅ Detección de recursos internos y plataformas expuestas públicamente
+- ✅ Identificación de mecanismos de acceso que no deberían ser visibles
+- ✅ Documentación técnica completa con evidencia
+- ✅ Reporte enviado — **sin acceso indebido, sin alteración, sin difusión**
+- ⏳ **En revisión por el equipo de seguridad de BBVA**
+
+### Impacto logrado:
+- ⛔ Bloqueado acceso malicioso por terceros
+- ⛔ Evitada filtración de información sensible
+- ✅ Fortalecida la seguridad de la institución y sus usuarios
+
+---
+
+## 🛡️ Áreas de acción
+- Hacking Ético · Divulgación Responsable
+- Análisis de infraestructura y seguridad web
+- Protección de plataformas financieras
 
 ---
 
